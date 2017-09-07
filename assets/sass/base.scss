@@ -13,18 +13,33 @@ body {
     line-height: 24px;
     font-family: 'Arial', 'Helvetica', sans-serif;
     color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 p {
-    margin: 0 0 0 10px;
+    margin: 0 0 10px 0;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: $header-font;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
 }
 
 h1 {
     font-size: 2.5em;
+}
+
+h2 {
+    line-height: 36px;
+}
+h2,
+h3 {
+    font-weight: 700;
+    font-size: 2em;
 }
 
 a:link,
@@ -34,17 +49,36 @@ a:active {
     color: $brand-yellow;
 }
 
-.container {
-    position: relative;
-
-    @media #{$screen-min-md} {
-        // max-width: 970px;
-        // margin: 0 auto;
-    }
-}
-
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+
+/**************************
+    Main Content
+***************************/
+
+.main-content {
+    flex: 1 0 0;
+}
+
+
+.container {
+    padding: 0;
+    // padding: 0 20px;
+
+    @media #{$screen-min-sm} {
+        padding: 0;
+        @include offset-2;
+    }
+
+    .sub {
+        text-align: center;
+        font-weight: 300;
+        font-family: $header-font;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
 }

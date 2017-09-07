@@ -92,6 +92,7 @@
             @include span(5, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
         .hero-header-container,
+        .container,
         .span_6 {
             @include span_first;
             width:100%;
@@ -158,12 +159,14 @@
         .span_7 {
             @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
+        .container,
         .span_8 {
             @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
         .span_9 {
             @include span(9, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
+        .offers .container,
         .span_10 {
             @include span(10, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
@@ -236,19 +239,20 @@
         .span_7 {
             @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
+        .container,
         .span_8 {
             @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
         .span_9 {
             @include span(9, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
+        .offers .container,
         .span_10 {
             @include span(10, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
         .span_11 {
             @include span(11, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .hero-header,
         .span_12 {
             @include span_first;
             width:100%;
@@ -315,12 +319,14 @@
         .span_7 {
             @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
+        .container,
         .span_8 {
             @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
         .span_9 {
             @include span(9, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
+        .offers .container,
         .span_10 {
             @include span(10, $gutter_pc, $gutter_px, $padding, $max_columns);
         }

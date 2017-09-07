@@ -1,0 +1,9 @@
+.main-footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+
+    @media #{$screen-min-sm} {
+        padding: 30px;
+    }
+}

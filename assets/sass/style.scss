@@ -1,3 +1,50 @@
 /**************************
     Zishiri Fitness Stylesheet
 ***************************/
+.offers {
+    background-color: #333333;
+    padding: 36px 0;
+    color: #ffffff;
+
+    .container {
+        @media #{$screen-min-sm} {
+            @include offset-1;
+        }
+    }
+
+    .offers-grid {
+        display: flex;
+        flex-direction: column;
+
+        @media #{$screen-min-sm} {
+            flex-direction: row;
+        }
+
+        .offers-item {
+            text-align: center;
+
+            @media #{$screen-min-sm} {
+                width: 33.3333337%;
+                padding: 15px 25px;
+            }
+
+            p {
+                @media #{$screen-min-sm} {
+                    font-size: 0.875em;
+                }
+            }
+
+            &:not(:last-child) {
+                @media #{$screen-min-sm} {
+                    border-right: 1px solid #2e2e2e;
+                }
+            }
+
+            h4 {
+                font-weight: 300;
+                color: $brand-yellow;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
