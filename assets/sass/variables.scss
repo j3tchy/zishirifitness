@@ -1,0 +1,33 @@
+$header-font: 'Montserrat', sans-serif;
+$brand-yellow: #FFBA00;
+
+$screen-min-sm: "screen and (min-width: 768px)";
+$screen-min-md: "screen and (min-width: 1024px)";
+$screen-min-lg: "screen and (min-width: 1320px)";
+
+/* Offset */
+
+@mixin offset-1-xs {
+    margin-left: 16.6666666667%;
+}
+@mixin offset-1 {
+    margin-left: 8.33333333333%;
+}
+
+@mixin offset-2-xs {
+    margin-left: 33.3333333333%;
+}
+@mixin offset-2 {
+    margin-left: 16.6666666667%;
+}
+
+@mixin offset-3-xs {
+    margin-left: 50%;
+}
+@mixin offset-3 {
+    margin-left: 25%;
+}
+
+@mixin offset-4 {
+    margin-left: 33.3333333333%;
+}
