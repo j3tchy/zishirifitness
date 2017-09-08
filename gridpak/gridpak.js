@@ -10,7 +10,7 @@ var gridpak = {
      * DOM element to append the Gridpak too
      *
      */
-    append: 'body',
+    append: '.section',
 
     css: '',
 

@@ -1,0 +1,37 @@
+.form {
+
+    .form-block {
+        overflow: hidden;
+    }
+
+    .form-input {
+        width: 100%;
+        margin-bottom: 7px;
+        line-height: 1.3;
+        font-size: 1.3em;
+        padding: 5px;
+
+        &.textarea {
+            height: 200px;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+        }
+    }
+
+    .btn.submit-button {
+        float: right;
+    }
+}
+
+.contact {
+    .form {
+        @media #{$screen-min-md} {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .form-block-wrapper {
+        @media #{$screen-min-md} {
+            width: 49%;
+        }
+    }
+}

@@ -3,49 +3,53 @@
 ***************************/
 .offers {
     background-color: #333333;
-    padding: 36px 0;
     color: #ffffff;
 
-
-
     .container {
-        @media #{$screen-min-sm} {
+        @media #{$screen-min-md} {
             @include offset-1;
         }
 
         .offers-container {
+
+
             h2 {
                 margin-bottom: 12px;
             }
 
             .sub {
                 padding: 0 15%;
+
+                @media #{$screen-min-sm} {
+                    margin-bottom: 42px;
+                }
             }
 
             .offers-grid {
-                display: flex;
-                flex-direction: column;
-
-                @media #{$screen-min-sm} {
-                    flex-direction: row;
-                }
-
                 .offers-item {
-                    text-align: center;
-                    margin-bottom: 24px;
-
-                    @media #{$screen-min-sm} {
-                        width: 33.3333337%;
-                        padding: 15px 25px;
-                    }
+                    padding-top: 70px;
+                    background: transparent url('../img/weights.svg') no-repeat center top;
+                    background-size: 60px;
 
                     @media #{$screen-min-md} {
-                        padding: 15px 70px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+
+                    &.free-session {
+                        background-image: url('../img/weights.svg');
+                    }
+
+                    &.certification {
+                        background-image: url('../img/certification.svg');
+                    }
+
+                    &.discount {
+                        background-image: url('../img/discount.svg');
+                        background-size: 33px;
                     }
 
                     p {
-                        padding: 0 20px;
-
                         @media #{$screen-min-sm} {
                             font-size: 0.875em;
                         }
@@ -62,6 +66,114 @@
                         color: $brand-yellow;
                         margin-bottom: 24px;
                     }
+                }
+            }
+        }
+    }
+}
+
+.about {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 12px;
+    border-bottom: 1px solid #D3D3D3;
+
+    @media #{$screen-min-sm} {
+        margin: 0;
+    }
+}
+
+.classes {
+    .container {
+        @media #{$screen-min-md} {
+            @include offset-1;
+        }
+    }
+    img {
+        margin-bottom: 24px;
+    }
+
+    .classes-grid {
+
+    }
+
+    .classes-container {
+        @media #{$screen-min-sm} {
+            margin-left: 0;
+        }
+
+        .grid {
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .grid-item {
+                &:not(:last-child) {
+                    margin-bottom: 36px;
+
+                    @media #{$screen-min-lg} {
+                        margin-bottom: 54px;
+                    }
+                }
+
+                @media #{$screen-min-sm} {
+                    width: 49%;
+
+                    &:nth-child(2n + 2) {
+                        margin-right: 0;
+                    }
+                }
+
+                @media #{$screen-min-lg} {
+                    width: 32.3333333333%;
+                    margin-bottom: 54px;
+                }
+            }
+        }
+    }
+
+    .class-details {
+        h4 {
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+
+        .btn {
+            margin: 24px auto 0;
+            display: block;
+        }
+    }
+}
+
+.contact {
+    background-color: #000000;
+    color: #ffffff;
+
+    .container {
+        @media #{$screen-min-md} {
+            @include offset-1;
+        }
+
+        @media #{$screen-min-lg} {
+            @include offset-2;
+        }
+    }
+
+    .contact-container {
+        margin-bottom: 36px;
+    }
+
+    .social-media-container {
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                width: 35px;
+                height: 35px;
+                display: block;
+
+                &:not(:last-child) {
+                    margin-right: 30px;
                 }
             }
         }

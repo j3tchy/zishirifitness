@@ -6,4 +6,20 @@
     @media #{$screen-min-sm} {
         padding: 30px;
     }
+
+    .built-by {
+        font-family: $header-font;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        color: #333333;
+        font-size: 0.8em;
+
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #333333;
+        }
+    }
 }
