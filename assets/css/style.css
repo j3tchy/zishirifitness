@@ -477,25 +477,35 @@ a:active {
   @media screen and (min-width: 768px) {
     .offers .container {
       margin-left: 8.33333333333%; } }
-  .offers .offers-grid {
+  .offers .container .offers-container h2 {
+    margin-bottom: 12px; }
+  .offers .container .offers-container .sub {
+    padding: 0 15%; }
+  .offers .container .offers-container .offers-grid {
     display: flex;
     flex-direction: column; }
     @media screen and (min-width: 768px) {
-      .offers .offers-grid {
+      .offers .container .offers-container .offers-grid {
         flex-direction: row; } }
-    .offers .offers-grid .offers-item {
-      text-align: center; }
+    .offers .container .offers-container .offers-grid .offers-item {
+      text-align: center;
+      margin-bottom: 24px; }
       @media screen and (min-width: 768px) {
-        .offers .offers-grid .offers-item {
+        .offers .container .offers-container .offers-grid .offers-item {
           width: 33.3333337%;
           padding: 15px 25px; } }
+      @media screen and (min-width: 1024px) {
+        .offers .container .offers-container .offers-grid .offers-item {
+          padding: 15px 70px; } }
+      .offers .container .offers-container .offers-grid .offers-item p {
+        padding: 0 20px; }
+        @media screen and (min-width: 768px) {
+          .offers .container .offers-container .offers-grid .offers-item p {
+            font-size: 0.875em; } }
       @media screen and (min-width: 768px) {
-        .offers .offers-grid .offers-item p {
-          font-size: 0.875em; } }
-      @media screen and (min-width: 768px) {
-        .offers .offers-grid .offers-item:not(:last-child) {
+        .offers .container .offers-container .offers-grid .offers-item:not(:last-child) {
           border-right: 1px solid #2e2e2e; } }
-      .offers .offers-grid .offers-item h4 {
+      .offers .container .offers-container .offers-grid .offers-item h4 {
         font-weight: 300;
         color: #FFBA00;
         margin-bottom: 24px; }
