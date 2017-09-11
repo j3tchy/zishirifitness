@@ -212,6 +212,7 @@
     border-left-width: 15px;
     padding: 0 0px;
     margin-left: 0; }
+  .container,
   .span_6 {
     width: 50%;
     border-left-width: 15px;
@@ -222,7 +223,6 @@
     border-left-width: 15px;
     padding: 0 0px;
     margin-left: 0; }
-  .container,
   .span_8 {
     width: 66.66667%;
     border-left-width: 15px;
@@ -246,6 +246,8 @@
     border-left-width: 15px;
     padding: 0 0px;
     margin-left: 0; }
+  .logo-container,
+  .title-container,
   .span_12 {
     margin-left: 0;
     width: 100%; } }
@@ -284,6 +286,8 @@
     border-left-width: 15px;
     padding: 0 0px;
     margin-left: 0; }
+  .title-container,
+  .aside,
   .span_3 {
     width: 25%;
     border-left-width: 15px;
@@ -295,6 +299,7 @@
     border-left-width: 15px;
     padding: 0 0px;
     margin-left: 0; }
+  .internal .container,
   .span_5 {
     width: 41.66667%;
     border-left-width: 15px;
@@ -312,6 +317,7 @@
     padding: 0 0px;
     margin-left: 0; }
   .contact .container,
+  .internal .banner,
   .span_8 {
     width: 66.66667%;
     border-left-width: 15px;
@@ -334,6 +340,8 @@
     border-left-width: 15px;
     padding: 0 0px;
     margin-left: 0; }
+  .logo-container,
+  .social-media-container,
   .span_12 {
     margin-left: 0;
     width: 100%; } }
@@ -389,7 +397,11 @@ a:active {
 
 .img-responsive {
   max-width: 100%;
-  display: block; }
+  display: block;
+  width: 100%; }
+
+.content-img {
+  margin: 36px 0; }
 
 /**************************
     Main Content
@@ -403,7 +415,7 @@ a:active {
   @media screen and (min-width: 768px) {
     .container {
       padding: 0;
-      margin-left: 16.6666666667%; } }
+      margin-left: 8.33333333333%; } }
   @media screen and (min-width: 1024px) {
     .container {
       margin-left: 25%; } }
@@ -438,6 +450,41 @@ a:active {
       .grid .three-columns-item {
         padding: 15px 70px; } }
 
+/**************************
+    Internal
+***************************/
+.internal .container {
+  background-color: #ffffff; }
+  @media screen and (min-width: 1024px) {
+    .internal .container {
+      margin-left: 16.6666666667%;
+      padding: 20px;
+      margin-bottom: 36px; } }
+
+@media screen and (min-width: 1024px) {
+  .internal .aside {
+    margin: 0 0 42px; } }
+
+.internal .aside .offer {
+  padding: 20px;
+  background-color: #000000;
+  color: #ffffff; }
+  .internal .aside .offer .slogan {
+    margin-bottom: 12px; }
+    @media screen and (min-width: 1024px) {
+      .internal .aside .offer .slogan {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.5em;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1; } }
+
+.internal .banner {
+  margin: 24px 0; }
+  @media screen and (min-width: 1024px) {
+    .internal .banner {
+      margin-left: 16.6666666667%; } }
+
 .btn:link,
 .btn {
   background-color: #FFBA00;
@@ -451,6 +498,34 @@ a:active {
   text-decoration: none;
   border: none;
   cursor: pointer; }
+
+.main-header {
+  background-color: #242424; }
+  .main-header .logo-container {
+    background-color: #000000;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff; }
+    .main-header .logo-container h1 {
+      font-weight: 300;
+      line-height: 50px;
+      font-size: 1.2em; }
+      .main-header .logo-container h1 span {
+        color: #FFBA00; }
+  .main-header .title-container {
+    padding: 20px 0; }
+    @media screen and (min-width: 1024px) {
+      .main-header .title-container {
+        margin-left: 16.6666666667%; } }
+    .main-header .title-container h2 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      line-height: 1;
+      display: inline-block;
+      text-align: left;
+      color: #ffffff; }
+      @media screen and (min-width: 1024px) {
+        .main-header .title-container h2 {
+          font-size: 3em; } }
 
 .hero-header {
   height: 400px;
@@ -643,12 +718,14 @@ a:active {
       margin-left: 16.6666666667%; } }
   .contact .contact-container {
     margin-bottom: 36px; }
-  .contact .social-media-container ul {
-    display: flex;
-    justify-content: center; }
-    .contact .social-media-container ul li {
-      width: 35px;
-      height: 35px;
-      display: block; }
-      .contact .social-media-container ul li:not(:last-child) {
-        margin-right: 30px; }
+
+.social-media-container ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px; }
+  .social-media-container ul li {
+    width: 35px;
+    height: 35px;
+    display: block; }
+    .social-media-container ul li:not(:last-child) {
+      margin-right: 20px; }

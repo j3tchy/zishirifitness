@@ -1,3 +1,45 @@
+.main-header {
+    background-color: #242424;
+
+    .logo-container {
+        background-color: #000000;
+        font-family: $header-font;
+        color: #ffffff;
+
+        h1 {
+            font-weight: 300;
+            line-height: 50px;
+            font-size: 1.2em;
+
+            span {
+                color: $brand-yellow;
+            }
+        }
+    }
+
+    .title-container {
+        padding: 20px 0;
+
+        @media #{$screen-min-md} {
+            @include offset-2;
+        }
+
+        h2 {
+            font-family: $header-font;
+            font-weight: 700;
+            line-height: 1;
+            display: inline-block;
+            text-align: left;
+            color: #ffffff;
+
+            @media #{$screen-min-md} {
+                font-size: 3em;
+            }
+        }
+    }
+}
+
+
 .hero-header {
     height: 400px;
     background-color: #000000;

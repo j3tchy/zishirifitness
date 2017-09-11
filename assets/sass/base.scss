@@ -59,6 +59,11 @@ a:active {
 .img-responsive {
     max-width: 100%;
     display: block;
+    width: 100%;
+}
+
+.content-img {
+    margin: 36px 0;
 }
 
 /**************************
@@ -73,11 +78,10 @@ a:active {
 .container {
     position: relative;
     padding: 0;
-    // padding: 0 20px;
 
     @media #{$screen-min-sm} {
         padding: 0;
-        @include offset-2;
+        @include offset-1;
     }
 
     @media #{$screen-min-md} {
@@ -122,6 +126,53 @@ a:active {
 
         @media #{$screen-min-md} {
             padding: 15px 70px;
+        }
+    }
+}
+
+/**************************
+    Internal
+***************************/
+.internal {
+    .container {
+        background-color: #ffffff;
+
+        @media #{$screen-min-md} {
+            @include offset-2;
+            padding: 20px;
+            margin-bottom: 36px;
+        }
+    }
+
+    .aside {
+        @media #{$screen-min-md} {
+            margin: 0 0 42px;
+        }
+
+        .offer {
+            padding: 20px;
+            background-color: #000000;
+            color: #ffffff;
+
+            .slogan {
+                margin-bottom: 12px;
+
+                @media #{$screen-min-md} {
+                    font-family: $header-font;
+                    font-size: 2.5em;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+
+    .banner {
+        margin: 24px 0;
+
+        @media #{$screen-min-md} {
+            @include offset-2;
         }
     }
 }

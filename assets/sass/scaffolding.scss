@@ -234,13 +234,13 @@
         .span_5 {
             @include span(5, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
+        .container,
         .span_6 {
             @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
         .span_7 {
             @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .container,
         .span_8 {
             @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
@@ -256,6 +256,8 @@
         .span_11 {
             @include span(11, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
+        .logo-container,
+        .title-container,
         .span_12 {
             @include span_first;
             width:100%;
@@ -306,6 +308,8 @@
         .span_2 {
             @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
+        .title-container,
+        .aside,
         .span_3 {
             @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
@@ -313,6 +317,7 @@
         .span_4 {
             @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
+        .internal .container,
         .span_5 {
             @include span(5, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
@@ -324,6 +329,7 @@
             @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
         .contact .container,
+        .internal .banner,
         .span_8 {
             @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
@@ -338,6 +344,8 @@
         .span_11 {
             @include span(11, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
+        .logo-container,
+        .social-media-container,
         .span_12 {
             @include span_first;
             width:100%;

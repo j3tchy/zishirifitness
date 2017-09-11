@@ -161,20 +161,21 @@
     .contact-container {
         margin-bottom: 36px;
     }
+}
 
-    .social-media-container {
-        ul {
-            display: flex;
-            justify-content: center;
+.social-media-container {
+    ul {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
 
-            li {
-                width: 35px;
-                height: 35px;
-                display: block;
+        li {
+            width: 35px;
+            height: 35px;
+            display: block;
 
-                &:not(:last-child) {
-                    margin-right: 30px;
-                }
+            &:not(:last-child) {
+                margin-right: 20px;
             }
         }
     }
