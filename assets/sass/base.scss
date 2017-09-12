@@ -72,8 +72,8 @@ a:active {
 
 .main-content {
     flex: 1 0 0;
+    position: relative;
 }
-
 
 .container {
     position: relative;
@@ -134,13 +134,26 @@ a:active {
     Internal
 ***************************/
 .internal {
+
+    &.main-content {
+        margin: 15px;
+    }
+
     .container {
         background-color: #ffffff;
 
+        @media #{$screen-min-sm} {
+            margin-left: 0;
+        }
+
         @media #{$screen-min-md} {
-            @include offset-2;
-            padding: 20px;
+            @include offset-1;
+            padding: 0 20px 0 0;
             margin-bottom: 36px;
+        }
+
+        @media #{$screen-min-lg} {
+            @include offset-2;
         }
     }
 
@@ -156,22 +169,31 @@ a:active {
 
             .slogan {
                 margin-bottom: 12px;
+                font-family: $header-font;
+                font-size: 2.5em;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 1;
 
-                @media #{$screen-min-md} {
-                    font-family: $header-font;
-                    font-size: 2.5em;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    line-height: 1;
+                @media #{$screen-min-sm} {
+                    font-size: 2em;
                 }
             }
         }
     }
 
     .banner {
-        margin: 24px 0;
+        margin: 0 0 24px;
+
+        @media #{$screen-min-sm} {
+            margin-top: 0;
+        }
 
         @media #{$screen-min-md} {
+            @include offset-1;
+        }
+
+        @media #{$screen-min-lg} {
             @include offset-2;
         }
     }

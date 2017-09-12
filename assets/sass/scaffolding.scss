@@ -93,6 +93,8 @@
         }
         .hero-header-container,
         .container,
+        .logo-container,
+        .social-media-container,
         .span_6 {
             @include span_first;
             width:100%;
@@ -146,6 +148,7 @@
         .span_3 {
             @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
+        .aside,
         .span_4 {
             @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
@@ -174,6 +177,7 @@
         }
         .offers .container,
         .classes .container,
+        .logo-container,
         .span_12 {
             @include span_first;
             width:100%;
@@ -227,6 +231,7 @@
         .span_3 {
             @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
+        .aside,
         .span_4 {
             @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
@@ -250,6 +255,8 @@
         .offers .container,
         .contact .container,
         .classes .container,
+        .banner,
+        .title-container,
         .span_10 {
             @include span(10, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
@@ -257,7 +264,6 @@
             @include span(11, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
         .logo-container,
-        .title-container,
         .span_12 {
             @include span_first;
             width:100%;

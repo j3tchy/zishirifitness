@@ -18,9 +18,13 @@
     }
 
     .title-container {
-        padding: 20px 0;
+        padding: 20px 15px;
 
         @media #{$screen-min-md} {
+            @include offset-1;
+        }
+        
+        @media #{$screen-min-lg} {
             @include offset-2;
         }
 

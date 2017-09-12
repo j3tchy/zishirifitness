@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900");
+@import url(../css/reset.css);
 /* Offset */
 /**
  * Gridpak Beta SCSS
@@ -71,6 +72,8 @@
     margin-left: 0; }
   .hero-header-container,
   .container,
+  .logo-container,
+  .social-media-container,
   .span_6 {
     margin-left: 0;
     width: 100%; } }
@@ -114,6 +117,7 @@
     border-left-width: 15px;
     padding: 0 0px;
     margin-left: 0; }
+  .aside,
   .span_4 {
     width: 33.33333%;
     border-left-width: 15px;
@@ -158,6 +162,7 @@
     margin-left: 0; }
   .offers .container,
   .classes .container,
+  .logo-container,
   .span_12 {
     margin-left: 0;
     width: 100%; } }
@@ -201,6 +206,7 @@
     border-left-width: 15px;
     padding: 0 0px;
     margin-left: 0; }
+  .aside,
   .span_4 {
     width: 33.33333%;
     border-left-width: 15px;
@@ -236,6 +242,8 @@
   .offers .container,
   .contact .container,
   .classes .container,
+  .banner,
+  .title-container,
   .span_10 {
     width: 83.33333%;
     border-left-width: 15px;
@@ -247,7 +255,6 @@
     padding: 0 0px;
     margin-left: 0; }
   .logo-container,
-  .title-container,
   .span_12 {
     margin-left: 0;
     width: 100%; } }
@@ -407,7 +414,8 @@ a:active {
     Main Content
 ***************************/
 .main-content {
-  flex: 1 0 0; }
+  flex: 1 0 0;
+  position: relative; }
 
 .container {
   position: relative;
@@ -453,13 +461,22 @@ a:active {
 /**************************
     Internal
 ***************************/
+.internal.main-content {
+  margin: 15px; }
+
 .internal .container {
   background-color: #ffffff; }
+  @media screen and (min-width: 768px) {
+    .internal .container {
+      margin-left: 0; } }
   @media screen and (min-width: 1024px) {
     .internal .container {
-      margin-left: 16.6666666667%;
-      padding: 20px;
+      margin-left: 8.33333333333%;
+      padding: 0 20px 0 0;
       margin-bottom: 36px; } }
+  @media screen and (min-width: 1320px) {
+    .internal .container {
+      margin-left: 16.6666666667%; } }
 
 @media screen and (min-width: 1024px) {
   .internal .aside {
@@ -470,18 +487,25 @@ a:active {
   background-color: #000000;
   color: #ffffff; }
   .internal .aside .offer .slogan {
-    margin-bottom: 12px; }
-    @media screen and (min-width: 1024px) {
+    margin-bottom: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1; }
+    @media screen and (min-width: 768px) {
       .internal .aside .offer .slogan {
-        font-family: "Montserrat", sans-serif;
-        font-size: 2.5em;
-        font-weight: 700;
-        text-transform: uppercase;
-        line-height: 1; } }
+        font-size: 2em; } }
 
 .internal .banner {
-  margin: 24px 0; }
+  margin: 0 0 24px; }
+  @media screen and (min-width: 768px) {
+    .internal .banner {
+      margin-top: 0; } }
   @media screen and (min-width: 1024px) {
+    .internal .banner {
+      margin-left: 8.33333333333%; } }
+  @media screen and (min-width: 1320px) {
     .internal .banner {
       margin-left: 16.6666666667%; } }
 
@@ -512,8 +536,11 @@ a:active {
       .main-header .logo-container h1 span {
         color: #FFBA00; }
   .main-header .title-container {
-    padding: 20px 0; }
+    padding: 20px 15px; }
     @media screen and (min-width: 1024px) {
+      .main-header .title-container {
+        margin-left: 8.33333333333%; } }
+    @media screen and (min-width: 1320px) {
       .main-header .title-container {
         margin-left: 16.6666666667%; } }
     .main-header .title-container h2 {
@@ -581,6 +608,8 @@ a:active {
   @media screen and (min-width: 768px) {
     .main-footer {
       padding: 30px; } }
+  .main-footer .container {
+    background-color: #000000; }
   .main-footer .built-by {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
