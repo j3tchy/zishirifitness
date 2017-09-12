@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900");
-@import url(../css/reset.css);
 /* Offset */
 /**
  * Gridpak Beta SCSS
@@ -359,7 +358,10 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
 
 body {
   font-size: 16px;
@@ -472,7 +474,7 @@ a:active {
   @media screen and (min-width: 1024px) {
     .internal .container {
       margin-left: 8.33333333333%;
-      padding: 0 20px 0 0;
+      padding: 0 30px 0 0;
       margin-bottom: 36px; } }
   @media screen and (min-width: 1320px) {
     .internal .container {
@@ -498,16 +500,17 @@ a:active {
         font-size: 2em; } }
 
 .internal .banner {
-  margin: 0 0 24px; }
-  @media screen and (min-width: 768px) {
-    .internal .banner {
-      margin-top: 0; } }
+  margin: 12px 0 24px; }
   @media screen and (min-width: 1024px) {
     .internal .banner {
       margin-left: 8.33333333333%; } }
   @media screen and (min-width: 1320px) {
     .internal .banner {
       margin-left: 16.6666666667%; } }
+  .internal .banner .wp-post-image {
+    max-width: 100%;
+    display: block;
+    width: 100%; }
 
 .btn:link,
 .btn {
@@ -533,8 +536,17 @@ a:active {
       font-weight: 300;
       line-height: 50px;
       font-size: 1.2em; }
-      .main-header .logo-container h1 span {
-        color: #FFBA00; }
+      .main-header .logo-container h1 a:link,
+      .main-header .logo-container h1 a:visited,
+      .main-header .logo-container h1 a:hover,
+      .main-header .logo-container h1 a:active {
+        text-decoration: none;
+        color: #ffffff; }
+        .main-header .logo-container h1 a:link span,
+        .main-header .logo-container h1 a:visited span,
+        .main-header .logo-container h1 a:hover span,
+        .main-header .logo-container h1 a:active span {
+          color: #FFBA00; }
   .main-header .title-container {
     padding: 20px 15px; }
     @media screen and (min-width: 1024px) {
@@ -610,7 +622,8 @@ a:active {
       padding: 30px; } }
   .main-footer .container {
     background-color: #000000; }
-  .main-footer .built-by {
+  .main-footer .built-by,
+  .main-footer .copyright {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -620,7 +633,11 @@ a:active {
     .main-footer .built-by a:link,
     .main-footer .built-by a:visited,
     .main-footer .built-by a:hover,
-    .main-footer .built-by a:active {
+    .main-footer .built-by a:active,
+    .main-footer .copyright a:link,
+    .main-footer .copyright a:visited,
+    .main-footer .copyright a:hover,
+    .main-footer .copyright a:active {
       color: #333333; }
 
 .form .form-block {
@@ -665,20 +682,19 @@ a:active {
       .offers .container .offers-container .sub {
         margin-bottom: 42px; } }
   .offers .container .offers-container .offers-grid .offers-item {
-    padding-top: 70px;
-    background: transparent url("../img/weights.svg") no-repeat center top;
-    background-size: 60px; }
+    padding-top: 70px; }
     @media screen and (min-width: 1024px) {
       .offers .container .offers-container .offers-grid .offers-item {
         padding-left: 30px;
         padding-right: 30px; } }
-    .offers .container .offers-container .offers-grid .offers-item.free-session {
-      background-image: url("../img/weights.svg"); }
-    .offers .container .offers-container .offers-grid .offers-item.certification {
-      background-image: url("../img/certification.svg"); }
-    .offers .container .offers-container .offers-grid .offers-item.discount {
-      background-image: url("../img/discount.svg");
-      background-size: 33px; }
+    .offers .container .offers-container .offers-grid .offers-item .offers-img-wrapper {
+      height: 59px;
+      margin: 0 auto 12px; }
+      .offers .container .offers-container .offers-grid .offers-item .offers-img-wrapper img {
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+        display: block; }
     @media screen and (min-width: 768px) {
       .offers .container .offers-container .offers-grid .offers-item p {
         font-size: 0.875em; } }

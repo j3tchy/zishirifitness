@@ -9,6 +9,8 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('assets/css'))
 });
 
+gulp.tas
+
 gulp.task('watch', function () {
     gulp.watch('assets/sass/**/*.scss', ['sass']);
 })

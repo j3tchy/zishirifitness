@@ -6,6 +6,9 @@
 *:before,
 *:after {
     box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
 }
 
 body {
@@ -134,7 +137,6 @@ a:active {
     Internal
 ***************************/
 .internal {
-
     &.main-content {
         margin: 15px;
     }
@@ -148,7 +150,7 @@ a:active {
 
         @media #{$screen-min-md} {
             @include offset-1;
-            padding: 0 20px 0 0;
+            padding: 0 30px 0 0;
             margin-bottom: 36px;
         }
 
@@ -183,11 +185,7 @@ a:active {
     }
 
     .banner {
-        margin: 0 0 24px;
-
-        @media #{$screen-min-sm} {
-            margin-top: 0;
-        }
+        margin: 12px 0 24px;
 
         @media #{$screen-min-md} {
             @include offset-1;
@@ -195,6 +193,12 @@ a:active {
 
         @media #{$screen-min-lg} {
             @include offset-2;
+        }
+
+        .wp-post-image {
+            max-width: 100%;
+            display: block;
+            width: 100%;
         }
     }
 }
