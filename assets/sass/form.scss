@@ -5,8 +5,8 @@
 
         @media #{$screen-min-md} {
             display: flex;
-            justify-content: space-between;
-            flex-direction: row;
+            // justify-content: space-between;
+            flex-direction: column;
         }
     }
 
@@ -16,6 +16,12 @@
 
     .form-block {
         overflow: hidden;
+        clear: both;
+
+        &.recaptcha {
+            margin: 0 0 8px;
+            float: right;
+        }
     }
 
     .form-input {
@@ -24,10 +30,10 @@
         line-height: 1.3;
         font-size: 1.3em;
         padding: 5px;
+        font-family: 'Arial', 'Helvetica', sans-serif;
 
         &.textarea {
             height: 200px;
-            font-family: 'Arial', 'Helvetica', sans-serif;
         }
     }
 
@@ -38,11 +44,34 @@
 
 .contact {
     .form {
-        @media #{$screen-min-md} {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
+        .screen-reader-response {
+            position: relative;
+            height: auto;
+            width: 100%;
+            margin-bottom: 12px;
+            text-align: center;
+            color: #000000;
+            background-color: #FFBA00;
+            font-weight: 600;
+            line-height: 1.3;
+            text-align: left;
+            padding: 15px;
+            display: none;
         }
+
+        [role="alert"] {
+            display: block;
+        }
+
+        form {
+            @media #{$screen-min-md} {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                width: 100%;
+            }
+        }
+
     }
     .form-block-wrapper {
         @media #{$screen-min-md} {

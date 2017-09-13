@@ -127,14 +127,18 @@
     }
 
     .class-details {
+        display: flex;
+        flex-direction: column;
+
         h4 {
-            font-weight: 400;
+            font-weight: 600;
             margin-bottom: 12px;
+            font-size: 1.3em;
         }
 
-        .btn {
-            margin: 24px auto 0;
-            display: block;
+        p:last-child {
+            display: inline-block;
+            margin: 12px auto 0;
         }
     }
 }
@@ -155,6 +159,10 @@
 
     .contact-container {
         margin-bottom: 36px;
+
+        @media #{$screen-min-md} {
+            margin-bottom: 0;
+        }
     }
 }
 

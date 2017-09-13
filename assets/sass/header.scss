@@ -81,23 +81,19 @@
 
         .slogan {
             font-family: $header-font;
-            font-size: 4.25em;
+            font-size: 14vw;
             line-height: 0.8;
             font-weight: 900;
             text-transform: uppercase;
 
             @media #{$screen-min-sm} {
-                font-size: 5em;
-                padding-bottom: 10px;
-            }
-
-            @media #{$screen-min-md} {
                 font-size: 5.25em;
+                padding-bottom: 10px;
             }
 
             @media #{$screen-min-lg} {
                 padding-right: 50px;
-                padding-bottom: 24px;
+                padding-bottom: 0;
             }
         }
 
