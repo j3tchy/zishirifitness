@@ -1,5 +1,19 @@
 .form {
 
+    & > div {
+        width: 100%;
+
+        @media #{$screen-min-md} {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
+
+    & > .wpcf7-display-none {
+        display: none;
+    }
+
     .form-block {
         overflow: hidden;
     }
@@ -27,6 +41,7 @@
         @media #{$screen-min-md} {
             display: flex;
             justify-content: space-between;
+            flex-direction: column;
         }
     }
     .form-block-wrapper {

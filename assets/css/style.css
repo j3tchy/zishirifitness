@@ -254,6 +254,7 @@
     padding: 0 0px;
     margin-left: 0; }
   .logo-container,
+  .social-media-container,
   .span_12 {
     margin-left: 0;
     width: 100%; } }
@@ -425,7 +426,7 @@ a:active {
   @media screen and (min-width: 768px) {
     .container {
       padding: 0;
-      margin-left: 8.33333333333%; } }
+      margin-left: 16.6666666667%; } }
   @media screen and (min-width: 1024px) {
     .container {
       margin-left: 25%; } }
@@ -640,6 +641,17 @@ a:active {
     .main-footer .copyright a:active {
       color: #333333; }
 
+.form > div {
+  width: 100%; }
+  @media screen and (min-width: 1024px) {
+    .form > div {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row; } }
+
+.form > .wpcf7-display-none {
+  display: none; }
+
 .form .form-block {
   overflow: hidden; }
 
@@ -659,7 +671,8 @@ a:active {
 @media screen and (min-width: 1024px) {
   .contact .form {
     display: flex;
-    justify-content: space-between; } }
+    justify-content: space-between;
+    flex-direction: column; } }
 
 @media screen and (min-width: 1024px) {
   .contact .form-block-wrapper {
@@ -682,7 +695,7 @@ a:active {
       .offers .container .offers-container .sub {
         margin-bottom: 42px; } }
   .offers .container .offers-container .offers-grid .offers-item {
-    padding-top: 70px; }
+    padding-top: 20px; }
     @media screen and (min-width: 1024px) {
       .offers .container .offers-container .offers-grid .offers-item {
         padding-left: 30px;

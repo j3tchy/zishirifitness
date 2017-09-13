@@ -84,7 +84,7 @@ a:active {
 
     @media #{$screen-min-sm} {
         padding: 0;
-        @include offset-1;
+        @include offset-2;
     }
 
     @media #{$screen-min-md} {

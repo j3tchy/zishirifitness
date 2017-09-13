@@ -25,9 +25,7 @@
 
             .offers-grid {
                 .offers-item {
-                    padding-top: 70px;
-                    // background: transparent url('../img/weights.svg') no-repeat center top;
-                    // background-size: 60px;
+                    padding-top: 20px;
 
                     @media #{$screen-min-md} {
                         padding-left: 30px;
@@ -45,19 +43,6 @@
                             display: block;
                         }
                     }
-
-                    // &.free-session {
-                    //     background-image: url('../img/weights.svg');
-                    // }
-                    //
-                    // &.certification {
-                    //     background-image: url('../img/certification.svg');
-                    // }
-                    //
-                    // &.discount {
-                    //     background-image: url('../img/discount.svg');
-                    //     background-size: 33px;
-                    // }
 
                     p {
                         @media #{$screen-min-sm} {

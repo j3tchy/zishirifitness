@@ -264,6 +264,7 @@
             @include span(11, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
         .logo-container,
+        .social-media-container,
         .span_12 {
             @include span_first;
             width:100%;
